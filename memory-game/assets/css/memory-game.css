@@ -1,0 +1,1161 @@
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* game start */
+
+.container-start {
+  background-color: #152938;
+  padding-bottom: 116px;
+}
+
+.container-start h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39.68px;
+  text-align: center;
+  color: #fcfcfc;
+  padding-top: 80px;
+  margin-bottom: 40px;
+}
+
+.start-game-box {
+  margin-inline: 24px;
+  background-color: #fcfcfc;
+  border-radius: 8px;
+  padding: 24px;
+}
+.start-game-box h4 {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18.6px;
+  text-align: left;
+  color: #7191a5;
+  margin-bottom: 11px;
+}
+.thema-btn {
+  display: flex;
+  justify-content: space-between;
+  gap: 11px;
+}
+
+.thema-btn button {
+  gap: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.84px;
+  text-align: center;
+  color: #fcfcfc;
+  background-color: #304859;
+  border: 1px solid #304859;
+  border-radius: 50px;
+  padding: 10px 33px;
+  margin-bottom: 24px;
+}
+
+.thema-btn :nth-child(2) {
+  background-color: #bcced9;
+  border: 1px solid #bcced9;
+}
+
+.user-numbers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.user-numbers :nth-child(1) {
+  background-color: #304859;
+  border: 1px solid #304859;
+}
+
+.user-numbers button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.84px;
+  text-align: center;
+  color: #fcfcfc;
+  background-color: #bcced9;
+  border: 1px solid #bcced9;
+  border-radius: 50px;
+  padding: 10px 27px;
+  margin-bottom: 24px;
+}
+
+.screen-size button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.84px;
+  text-align: center;
+  color: #fcfcfc;
+  background-color: #304859;
+  border: 1px solid #304859;
+  border-radius: 50px;
+  padding: 10px 52.5px;
+  margin-bottom: 32px;
+}
+.screen-size-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.screen-size-btn :nth-child(2) {
+  background-color: #bcced9;
+  border: 1px solid #bcced9;
+}
+
+.btn-start {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22.32px;
+  text-align: center;
+  color: #fcfcfc;
+  background-color: #fda214;
+  border: 1px solid #fda214;
+  border-radius: 50px;
+  padding: 12px 71px 14px 71px;
+  align-items: center;
+}
+/* --------------------------------------------game end------------------------------------------ */
+
+/* ?-------------------------------------------------------------------------------------------- */
+/* ?-----------------------------------Game - Numbers -multiplayer  6x6 START --------------------------------------- */
+
+.container-6x6 {
+  margin: 0 auto;
+}
+.btn-game {
+  display: none;
+}
+.header img {
+  display: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 24px 80px 24px;
+}
+.header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.76px;
+  text-align: left;
+  color: #152938;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.84px;
+  text-align: center;
+  background-color: #fda214;
+  color: #fcfcfc;
+  border: 1px solid #fda214;
+  border-radius: 50px;
+  padding: 8px 18px;
+}
+
+.game-screen {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 9.12px;
+  margin-inline: 24px;
+  margin-bottom: 94.12px;
+}
+
+.game-screen button {
+  border-radius: 50%;
+  padding: 8px 8.15px 8.8px 9px;
+  color: #fcfcfc;
+  background-color: #bcced9;
+  border: 1px solid #bcced9;
+}
+
+.game-screen button .bos {
+  background-color: #152938;
+}
+
+.players-desktop {
+  display: none;
+}
+
+.players-mobil {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-inline: 24px;
+  margin-bottom: 24px;
+}
+
+.oyuncu1,
+.oyuncu3,
+.oyuncu4 {
+  padding: 10px 13px 9px 14px;
+  border-radius: 8px;
+  background-color: #dfe7ec;
+  text-align: center;
+}
+.oyuncu1 h3,
+.oyuncu3 h3,
+.oyuncu4 h3 {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18.6px;
+  text-align: center;
+  color: #7191a5;
+  margin-bottom: 2px;
+}
+
+.oyuncu1 p,
+.oyuncu3 p,
+.oyuncu4 p {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.76px;
+  text-align: center;
+  color: #304859;
+}
+.oyuncu2 {
+  padding: 10px 13px 9px 14px;
+  border-radius: 8px;
+  background-color: #fda214;
+  text-align: center;
+}
+.oyuncu2 h3 {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18.6px;
+  text-align: center;
+  color: #fcfcfc;
+  margin-bottom: 4px;
+}
+.oyuncu2 p {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 18.6px;
+  text-align: center;
+  color: #fcfcfc;
+}
+/* ?-----------------------------------Game - Numbers -multiplayer 6x6  END --------------------------------------- */
+/* ?----------------------------------Game - Numbers -multiplayer 4x4  START --------------------------------------- */
+
+.game-screen-4x4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 9.12px;
+  margin-inline: 24px;
+  margin-bottom: 94.12px;
+}
+
+.game-screen-4x4 button {
+  border-radius: 50%;
+  padding: 8px 8.15px 8.8px 9px;
+  color: #fcfcfc;
+  background-color: #bcced9;
+  border: 1px solid #bcced9;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 49.6px;
+  text-align: center;
+}
+/* ?-----------------------------------Game - Numbers -multiplayer  4x4  END --------------------------------------- */
+/* ?-----------------------------------Game - Numbers -solo- Multiplayer - 6X6  START*/
+.score-box {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 24px;
+}
+.score-box .time {
+  width: 151px;
+  padding: 10px 31px 9px 33px;
+  background-color: #dfe7ec;
+  border-radius: 8px;
+}
+.time h3 {
+  color: #7191a5;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18.6px;
+  text-align: center;
+  margin-bottom: 2px;
+}
+.time h2 {
+  color: #304859;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.76px;
+  text-align: center;
+}
+
+.score-box .score {
+  width: 151px;
+  padding: 10px 31px 9px 33px;
+  background-color: #dfe7ec;
+  border-radius: 8px;
+}
+
+.score h3 {
+  color: #7191a5;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18.6px;
+  text-align: center;
+  margin-bottom: 2px;
+}
+.score h2 {
+  color: #304859;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.76px;
+  text-align: center;
+}
+
+/* ?-----------------------------------Game - Numbers -solo- Multiplayer - 6X6  END*/
+
+/* -------------------------------------------WİNNERR */
+
+.container-winner {
+  width: 327px;
+}
+.header-winner {
+  padding: 32px 52px 24px 52px;
+}
+
+.header-winner h2 {
+  font-family: Atkinson Hyperlegible;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.76px;
+  text-align: center;
+  color: #152938;
+  margin-bottom: 9px;
+}
+
+.header-winner h4 {
+  font-family: Atkinson Hyperlegible;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17.36px;
+  color: #7191a5;
+  margin-bottom: 24px;
+}
+.players {
+  margin-inline: 24px;
+}
+.player3 {
+  background-color: #152938;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.player2 {
+  background-color: #dfe7ec;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+.player1 {
+  background-color: #dfe7ec;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+.player4 {
+  background-color: #dfe7ec;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+.player3 h3 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16.12px;
+  text-align: left;
+  color: #fcfcfc;
+}
+.player3 p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.8px;
+  text-align: right;
+  color: #fcfcfc;
+}
+.player1 h3,
+.player2 h3,
+.player4 h3 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16.12px;
+  text-align: left;
+  color: #7191a5;
+}
+.player1-tie {
+  background-color: #152938;
+  color: #fcfcfc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+.player2-tie {
+  color: #152938;
+  background-color: #dfe7ec;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  margin-inline: 24px;
+}
+.player3-tie {
+  background-color: #152938;
+  color: #fcfcfc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+.player4-tie {
+  color: #152938;
+  background-color: #dfe7ec;
+  margin-inline: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+.player1-tie p {
+  font-family: Atkinson Hyperlegible;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.8px;
+  text-align: right;
+}
+.player1-tie p,
+.player3-tie p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.8px;
+  text-align: right;
+  color: #dfe7ec;
+}
+.player2-tie p,
+.player4-tie p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.8px;
+  text-align: right;
+  color: #304859;
+}
+
+.player1 p,
+.player2 p,
+.player4 p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.8px;
+  text-align: right;
+  color: #304859;
+}
+
+.again-btn {
+  text-decoration: none;
+  padding: 12px 75px 14px 75px;
+  background-color: #fda214;
+  color: #fcfcfc;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.8px;
+  text-align: center;
+  border-radius: 50px;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+.new-btn {
+  text-decoration: none;
+  padding: 12px 75px 14px 75px;
+  background-color: #dfe7ec;
+  color: #304859;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22.32px;
+  text-align: center;
+}
+.game-buttons {
+  margin-inline: 24px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gameover-score :nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  background-color: #dfe7ec;
+  margin-inline: 24px;
+  border-radius: 8px;
+  padding-block: 6px;
+  margin-bottom: 8px;
+}
+
+.gameover-score :nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  background-color: #dfe7ec;
+  border-radius: 8px;
+  margin-inline: 24px;
+}
+.gameover-score h3 {
+  margin: 0 auto;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16.12px;
+  text-align: left;
+  color: #7191a5;
+}
+
+.gameover-score p {
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.8px;
+  text-align: right;
+  color: #304859;
+}
+
+/* !---------------------------------------------------------------------------------------------------------------------------TABLETTT */
+
+@media (width >= 768px) {
+  .start-game-box {
+    padding: 56px;
+    margin-inline: 57px;
+  }
+  .thema-btn button {
+    padding: 11px 73px 9px 73px;
+  }
+  .user-numbers {
+    gap: 21px;
+  }
+  .user-numbers button {
+    padding: 11px 42px 9px 42px;
+  }
+  .screen-size-btn {
+    gap: 30px;
+  }
+  .screen-size-btn button {
+    padding: 11px 104px 9px 104px;
+  }
+  .btn-start {
+    padding: 16px 183px 14px 185px;
+  }
+
+  /* ?----------------------------Game - Numbers -multiplayer 6x6 START ---------------*/
+
+  .container-6x6 {
+    margin: 0 auto;
+  }
+  .header {
+    margin-inline: 39px;
+  }
+
+  .menu {
+    display: none;
+  }
+  .game-screen {
+    margin-inline: 98px;
+    gap: 16px;
+    margin-bottom: 112px;
+  }
+  .game-screen button {
+    border-radius: 50%;
+    padding: 9px 15px 13px 15px;
+    color: #fcfcfc;
+    background-color: #bcced9;
+    border: 1px solid #bcced9;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 54.56px;
+    text-align: center;
+  }
+
+  .players-mobil {
+    display: none;
+  }
+  .players-desktop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 11px;
+    margin-inline: 39px;
+    margin-bottom: 38px;
+  }
+
+  .header h2 {
+    display: none;
+  }
+
+  .header img {
+    display: inline;
+  }
+  .btn-game {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .btn-game a {
+    text-decoration: none;
+    padding: 13px 29px 14px 28px;
+    background-color: #fda214;
+    color: #fcfcfc;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.8px;
+    text-align: center;
+    border-radius: 50px;
+  }
+  .btn-game :nth-child(2) {
+    text-decoration: none;
+    padding: 13px 29px 14px 28px;
+    background-color: #dfe7ec;
+    color: #304859;
+    border-radius: 50px;
+  }
+  /* ?------------------------------------------------------------- -Game - Numbers -multiplayer 6x6 END ---------------*/
+  /* ?--------------------------------Game - Numbers -multiplayer 4x4  START --------------------------------------- */
+
+  .game-screen-4x4 {
+    margin-inline: 98px;
+    gap: 20px;
+    margin-bottom: 118px;
+  }
+
+  .game-screen-4x4 button {
+    border-radius: 50%;
+    padding: 29px 21px 28px 21px;
+    color: #fcfcfc;
+    background-color: #bcced9;
+    border: 1px solid #bcced9;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 69.44px;
+    text-align: center;
+  }
+  /* ?------------------------------------Game - Numbers -multiplayer 4x4  END --------------------------------------- */
+  /* ?-----------------------------------Game - Numbers -solo- Multiplayer - 6X6  START*/
+
+  .score-box {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-inline: 114px;
+    margin-bottom: 48px;
+  }
+  .score-box .time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 255px;
+    padding: 17px 24px 15px 21px;
+    background-color: #dfe7ec;
+    border-radius: 8px;
+  }
+  .score-box h3 {
+    color: #7191a5;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.32px;
+    text-align: left;
+    margin-bottom: 2px;
+  }
+  .score-box h2 {
+    color: #304859;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.68px;
+    text-align: right;
+  }
+
+  .score-box .score {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 255px;
+    padding: 17px 24px 15px 21px;
+    background-color: #dfe7ec;
+    border-radius: 8px;
+  }
+
+  /* ?-----------------------------------Game - Numbers -solo- Multiplayer - 6X6  END*/
+  /* -------------------------------------------WİNNERR */
+
+  .container-winner {
+    width: 654px;
+  }
+  .header-winner {
+    padding: 51px 162px 24px 164px;
+  }
+
+  .header-winner h2 {
+    font-family: Atkinson Hyperlegible;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59.52px;
+    text-align: center;
+    color: #152938;
+    margin-bottom: 9px;
+  }
+
+  .header-winner h4 {
+    font-family: Atkinson Hyperlegible;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.32px;
+    text-align: center;
+    color: #7191a5;
+    margin-bottom: 24px;
+  }
+  .players {
+    margin-inline: 56px;
+  }
+  .player3 {
+    background-color: #152938;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 32px 25px 32px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+  }
+
+  .player2 {
+    background-color: #dfe7ec;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 32px 25px 32px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+  }
+  .player1 {
+    background-color: #dfe7ec;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 32px 25px 32px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+  }
+  .player4 {
+    background-color: #dfe7ec;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 32px 25px 32px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+  }
+  .player3 h3 {
+    font-family: Atkinson Hyperlegible;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.32px;
+    text-align: left;
+    color: #fcfcfc;
+  }
+  .player3 p {
+    font-family: Atkinson Hyperlegible;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.68px;
+    text-align: right;
+    color: #fcfcfc;
+  }
+  .player1 h3,
+  .player2 h3,
+  .player4 h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.8px;
+    text-align: right;
+    color: #7191a5;
+  }
+  .player1-tie {
+    background-color: #152938;
+    color: #fcfcfc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 32px 25px 32px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+  }
+  .player2-tie {
+    color: #152938;
+    background-color: #dfe7ec;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 32px 25px 32px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    margin-inline: 24px;
+  }
+  .player3-tie {
+    background-color: #152938;
+    color: #fcfcfc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 32px 25px 32px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    
+  }
+  .player4-tie {
+    color: #152938;
+    background-color: #dfe7ec;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 32px 25px 32px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+  }
+  .player1-tie p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.32px;
+    text-align: right;
+  }
+  .player1-tie p,
+  .player3-tie p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.32px;
+    text-align: left;
+    color: #dfe7ec;
+  }
+  .player2-tie p,
+  .player4-tie p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.8px;
+    text-align: right;
+    color: #304859;
+  }
+
+  .player1 p,
+  .player2 p,
+  .player4 p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.8px;
+    text-align: right;
+    color: #304859;
+  }
+
+  .again-btn {
+    text-decoration: none;
+    padding: 12px 75px 14px 75px;
+    background-color: #fda214;
+    color: #fcfcfc;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.8px;
+    text-align: center;
+    border-radius: 50px;
+    margin-bottom: 16px;
+    margin-top: 24px;
+  }
+  .new-btn {
+    text-decoration: none;
+    padding: 12px 75px 14px 75px;
+    background-color: #dfe7ec;
+    color: #304859;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.32px;
+    text-align: center;
+  }
+  .game-buttons {
+    /* margin-inline: 36px; */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .container-winner {
+    margin: 0 auto;
+  }
+
+  .gameover-score :nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    background-color: #dfe7ec;
+    margin-inline: 24px;
+    border-radius: 8px;
+    padding-block: 6px;
+    margin-bottom: 8px;
+  }
+
+  .gameover-score :nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    background-color: #dfe7ec;
+    border-radius: 8px;
+    margin-inline: 24px;
+  }
+  .gameover-score h3 {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16.12px;
+    text-align: left;
+    color: #7191a5;
+  }
+
+  .gameover-score p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.8px;
+    text-align: right;
+    color: #304859;
+  }
+}
+
+/* !------------------------------------------------------------------------------------------------DESKTOPPPP---------------- */
+/* !----------------------------------------------------------------------------------------------------------------- */
+
+@media (width > 1024px) {
+  .start-game-box {
+    padding: 56px;
+    margin-inline: 393px;
+  }
+
+  /* ?-----------------------------------Game - Numbers -multiplayer 6x6 --------------------------------------- */
+
+  .container-6x6 {
+    margin: 0 auto;
+  }
+
+  .menu {
+    display: none;
+  }
+  .header h2 {
+    display: none;
+  }
+
+  .header img {
+    display: inline;
+  }
+
+  .header {
+    margin-inline: 167px;
+  }
+  .btn-game {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .game-screen {
+    margin-inline: 434px;
+  }
+  .players-mobil {
+    display: none;
+  }
+  .players-desktop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-inline: 165px;
+    margin-bottom: 74px;
+  }
+  /* ?---------------------------------Game - Numbers -multiplayer 6X6  END --------------------------------------- */
+  /* ?----------------------------Game - Numbers -multiplayer  4x4  START --------------------------------------- */
+
+  .game-screen-4x4 {
+    margin-inline: 454px;
+    gap: 20px;
+    margin-bottom: 103px;
+  }
+
+  .game-screen-4x4 button {
+    border-radius: 50%;
+    padding: 29px 21px 28px 21px;
+    color: #fcfcfc;
+    background-color: #bcced9;
+    border: 1px solid #bcced9;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 69.44px;
+    text-align: center;
+  }
+  /* ?-----------------------------------Game - Numbers -multiplayer 4x4  END --------------------------------------- */
+  /* ?-----------------------------------Game - Numbers -solo- Multiplayer - 6X6  START*/
+
+  .score-box {
+    margin-inline: 450px;
+    margin-bottom: 70px;
+  }
+
+  /* ?-----------------------------------Game - Numbers -solo- Multiplayer - 6X6  END*/
+  /* ?-----------------------------------  Game - icons - Multiplayer - 6X6  start*/
+  .game-screen {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+    margin-inline: 434px;
+    margin-bottom: 83px;
+  }
+
+  .game-screen button {
+    border-radius: 50%;
+    padding: 21px;
+    color: #fcfcfc;
+    background-color: #bcced9;
+    border: 1px solid #bcced9;
+  }
+
+  /* ?-----------------------------------Game - icons - Multiplayer - 6X6  END*/
+
+  /* ?-----------------------------------  Game - icons - Multiplayer - 4x4  start*/
+  .game-screen-4x4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-inline: 454px;
+    margin-bottom: 103px;
+  }
+
+  .game-screen-4x4 img {
+    width: 56px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .game-screen-4x4 button {
+    border-radius: 50%;
+    padding: 31px;
+    color: #fcfcfc;
+    background-color: #bcced9;
+    border: 1px solid #bcced9;
+  }
+
+  /* ?-----------------------------------Game - icons - Multiplayer -4x4   END*/
+
+  /* ?------------------------------Desktop - Game - Just Started - Multiplayer - 6X6  START-------------------------------- */
+  .game-screen-just-start {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-inline: 454px;
+    gap: 20px;
+    margin-bottom: 103px;
+  }
+
+  .game-screen-just-start button {
+    border-radius: 50%;
+    padding: 29px 21px 28px 21px;
+    background-color: #304859;
+    border: 1px solid #304859;
+  }
+  .game-screen-just-start-6X6 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-inline: 454px;
+    gap: 20px;
+    margin-bottom: 103px;
+  }
+  .game-screen-just-start-6X6 button {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    padding: 29px 21px 28px 21px;
+    background-color: #304859;
+    border: 1px solid #304859;
+  }
+
+  /* ?------------------------------Desktop - Game - Just Started - Multiplayer - 6X6  END-------------------------------- */
+  /* ?------------------------------Desktop - Game - Just Started - Multiplayer - 4x4  START-------------------------------- */
+
+  .game-screen-just-start-4X4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-inline: 434px;
+    gap: 20px;
+    margin-bottom: 103px;
+  }
+  .game-screen-just-start-4X4 button {
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    padding: 29px 21px 28px 21px;
+    background-color: #304859;
+    border: 1px solid #304859;
+  }
+  /* ?------------------------------Desktop - Game - Just Started - Multiplayer - 4x4  END-------------------------------- */
+
+  .container-winner {
+    width: 654px;
+  }
+  .header-winner {
+    padding: 51px 162px 24px 164px;
+  }
+}
